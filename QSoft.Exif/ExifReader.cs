@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace QSoft.Exif
 {
@@ -12,11 +11,12 @@ namespace QSoft.Exif
         public bool Open(Stream stream)
         {
             BinaryReader br = new BinaryReader(stream);
-
+            byte[] bb = br.ReadBytes(2);
+            bb = br.ReadBytes(2);
+            bb = br.ReadBytes(2);
 
 
             br.Close();
-            br.Dispose();
             return true;
         }
     }

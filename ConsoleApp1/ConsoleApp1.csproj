@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QSoft.Exif\QSoft.Exif.csproj">
+      <Project>{9032aa88-e190-4404-89fc-bd896b1482db}</Project>
+      <Name>QSoft.Exif</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
